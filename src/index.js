@@ -99,7 +99,6 @@ window.onload = function () {
 	}
 
 	window.Widget = app;
-
-	Widget.init('25')
+	console.log(window.Widget);
 
 }

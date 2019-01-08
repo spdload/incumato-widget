@@ -2,13 +2,14 @@
  <head>
    <title>!DOCTYPE</title>
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-   <link rel="stylesheet" type="text/css" href="./dist/style.min.css">
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/spdload/incumato-widget/dist/style.min.css">
  </head>
  <body>
 
-   <script type="text/javascript" src="./dist/bundle.min.js"></script>
-   <script>
-   	// init
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/spdload/incumato-widget/dist/bundle.min.js" defer></script>
+   <script defer>
+   	console.log(window.Widget)
+   	Widget.init('25');
    </script>
  </body> 
 </html>
