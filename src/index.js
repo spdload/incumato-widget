@@ -3,7 +3,7 @@ window.onload = function() {
 	var app = {};
 
 	app.init = function(apiKey) {
-		if (!Widget.widgetId) { 
+		if (!Widget.widgetId) {
 			console.warn('Widget.widgetId is not defined. Please define it!')
 		}
 		// Apply Button creation
@@ -24,7 +24,7 @@ window.onload = function() {
 		iframe.id = 'widget-iframe';
 
 		// Setting iframe attributes and styles
-		iframe.src = 'http://incumato.test/widget/' + Widget.widgetId;
+		iframe.src = 'https://app.incumato.de/widget/' + Widget.widgetId;
 		iframe.innerHTML = 'Fail to load.';
 
 		// Loader creation
@@ -32,7 +32,7 @@ window.onload = function() {
 		loader.id = 'widget-loader';
 
 		// Provide event listeners
-		applyBtn.addEventListener("click", function() { 
+		applyBtn.addEventListener("click", function() {
 			// app.show(modal);
 			// app.hide(button)
 			document.body.removeChild(applyBtn);
@@ -42,7 +42,7 @@ window.onload = function() {
 			modal.appendChild(iframe);
 		}, false);
 
-		closeBtn.addEventListener("click", function() { 
+		closeBtn.addEventListener("click", function() {
 			document.body.removeChild(modal);
 			document.body.appendChild(applyBtn);
 		}, false);
