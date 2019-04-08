@@ -46,20 +46,19 @@ body {
 }
 
 #widget-btn-apply {
-	width: 70px;
-	height: 70px;
-	background-color: #7862EE;
-	border-radius: 50%;
-	position: fixed;
-	right: 20px;
-	bottom: 20px;
-	color: #fff;
-	font-weight: 600;
-	cursor: pointer;
-	font-size: 16px;
-	z-index: 10000;
-	outline: none;
-	border: none;
+    width: 70px;
+    height: 70px;
+    background-color: #7862ee;
+    border-radius: 50%;
+    display: flex;
+    position: fixed;
+    right: 20px;
+    bottom: 21px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    z-index: 10000;
+    justify-content: center;
 }
 
 #widget-btn-close {
